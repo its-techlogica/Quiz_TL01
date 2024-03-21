@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <div id="welcome-section">
+    <h2>Welcome to the Quiz!</h2>
+    <p>Click the button below to begin the quiz.</p>
+    <button onclick="showTopics()">Begin Quiz</button>
+  </div>
+
+  <nav id="quiz-topics" style="display: none;">
+    <ul>
+      <li><a href="#" onclick="loadQuiz('Geography')">Geography</a></li>
+      <li><a href="#" onclick="loadQuiz('Science')">Science</a></li>
+      <li><a href="#" onclick="loadQuiz('Literature')">Literature</a></li>
+      <!-- Add more topics as needed -->
+    </ul>
+  </nav>
+
+  <div id="quiz" style="display: none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="submit" onclick="submitAnswer()">Submit</button>
+    <button id="next" onclick="nextQuestion()" style="display: none;">Next</button>
+    <div id="feedback"></div>
+    <div id="score">Score: <span id="scoreValue">0</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

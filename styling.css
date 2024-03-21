@@ -1,0 +1,106 @@
+/* Styles for welcome section */
+#welcome-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#welcome-section h2 {
+  font-size: 24px;
+}
+
+#welcome-section p {
+  font-size: 16px;
+}
+
+#welcome-section button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for quiz topics navigation */
+#quiz-topics {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#quiz-topics ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#quiz-topics ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#quiz-topics ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#quiz-topics ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Styles for quiz section */
+#quiz {
+  display: none;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+#quiz #question {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#quiz #options {
+  display: flex;
+  flex-direction: column;
+}
+
+#quiz .option {
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+#quiz .option:hover {
+  background-color: #ddd;
+}
+
+#quiz #submit, #quiz #next {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#quiz #submit:hover, #quiz #next:hover {
+  background-color: #45a049;
+}
+
+#quiz #feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#quiz #score {
+  margin-top: 20px;
+  font-weight: bold;
+}
